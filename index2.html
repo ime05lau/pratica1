@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>title</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+               
+        
+        <link href="css/jquery.mobile.structure-1.3.2.min.css" rel="stylesheet">
+        <link href="css/jquery.mobile-1.3.2.min.css" rel="stylesheet">
+    
+        <script src="js/jquery-1.9.1.min.js"></script>
+        <script src="js/jquery.mobile-1.3.2.min.js"></script>
+        <script src="js/acciones.js"></script>        
+        
+<!-- necesario a la hora empaquetar con phonegap--->
+        <script src="phonegap.js"></script>
+        
+        <!-- necesario*/ -->
+    </head>
+    
+    <body>
+        <div data-role="page" id="principal">
+        <div data-role="header">
+        <h1>Dias para mi cumpleanos</h1>
+        </div>
+        <div data-role="content">
+        <h1>bienvenido </h1>
+        <p>esta aplicacion te ayudara para saber cuantos dias faltan para tu cumpleanos y para saber cuantos anos tienes hasta ahora
+        <br>
+         *todos los datos que proporcionaste seran confidenciales.</p>
+         
+         <br>
+         <br>
+         <div align="right">
+         <a href="#datos" data-role="button" data-inline="true" data-icon="arrow-r" data-iconpos="right">
+          comenzar
+            </a>
+         </div>
+         </div>
+         <div data-role="footer">
+         <h4>Laura Avila Montalvo </h4>
+          <h4>Imelda Toxqui Fabian </h4>
+         </div>
+         </div>
+         
+         <div data-role="page" id="datos">
+         <div date-role="header">
+         <h1> nombre </h1>
+         
+         </div>
+         <div data-role="content">
+         <div style="width:450px" align="center">
+           <input type="text" placeholder="inserta tu nombre"=data-inline="true" name="nombre" id="txtdatos">
+           </div>
+           <div align="center">
+           <a href="#principal" data-role="button" data-inline="true" data-icon="arrow-|" data-inconpos="left">
+            atras
+            </a>
+           <a href="#fecha" data-role="button" data-inline="true" data-icon="arrow-r" data-iconpos="right" id="datos1">
+               siguiente
+               </a>
+            </div>
+            </div>
+            <div data-role="footer">
+             
+             <h4> Laura Avila Montalv </h4>
+             <h4> imelda toxqui fabian </h4>
+             
+            </div> 
+            </div>
+            
+            <div data-role="page" id="fecha">
+            <div data-role="header">
+            <h1>nacimiento</h1>
+            </div>
+            <div data-role="content">
+            <div align="center" data-role="controlgroup" data-type="horizontal">
+            <div style="width:100px;float:left;padding:12px;align:center">
+                  dia
+                  <input type="number" max="31" min="01" name="dia" id="diacumple"/>
+                  DD
+                  </div>
+                  <div style="width:100px;float:left;padding:12px; align:center">
+                  Mes
+                  <input type="number" name="mes" max="12" min="01" id="mescumple"/>
+                  MM
+                  </div>
+                  <div style="width:100px;float:left;padding:12px;align:center">
+                   Año
+                   <input type="number" name="ano" max="2015" min="1996" id="anocumple"/>
+                  AAAA
+                       </div>
+                     </div>
+                  </div>
+                  <div aling="center">
+                       <a href="#datos" data-role="button" data-inline="true" data-icon="arrow-l" data-iconpos="left">
+                    atras
+                    </a>
+                    <a href="#resultado" data-role="button" data-inline="true" data-icon="arrow-r" data-iconpos="right" id="fecha1">
+                    siguiente
+                    </a>
+                    </div>
+                    
+                    <div data-role="footer">
+                    <h4> Laura Avila Montalvo </h4>
+                    <h4>Imelda Toxqui Fabian </h4>
+                    </div>
+                   </div>
+                    
+                    <div data-role="page" id="resultado" data-add-back-btn="true" class="finales">
+                    <div data-role="header">
+                    <h1> Dias para celebrar </h1>
+                    </div>
+                    <div data-role="content">
+                    <div id="Mnombre">
+                             Nombre
+                           </div>
+                           <div id="Mdias">
+                             Dias
+                           </div>
+                           <div id="Mcumple">
+                             Cumple
+                           </div>
+                           <div id="animacion">
+                            Animacion
+                           </div>
+                           <div id="mensaje">
+                            Mensaje
+                           </div>
+                           <div id="Medad">
+                            Edad
+                             </div>
+                           </div>
+                           <div data-role="footer">
+                                <h4> Laura Avila Montalvo</h4>
+                                 <h4> Imelda Toxqui Fabian </h4>
+                             </div>
+                           </div>
+                   
+        
+            
+              
+    </body>
+
+</html>
